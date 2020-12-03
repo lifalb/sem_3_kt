@@ -27,7 +27,7 @@ int main(int argc, char** argv){
 				size_file_content = read(fdsPoll[i].fd, files_contetn[i*1000], 1000);
 				if(size_file_content > 0){
 					buf[i*1000+size_file_content] = '\0';
-					printf("fifo: %s\: %s", argv[i+1], files_content[i*1000];					
+					printf("fifo: %s: %s", argv[i+1], files_content[i*1000];					
 			}
 		}
 	free(fdsPoll);
